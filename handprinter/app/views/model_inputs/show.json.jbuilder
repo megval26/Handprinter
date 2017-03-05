@@ -1,0 +1,1 @@
+json.partial! "model_inputs/model_input", model_input: @model_input

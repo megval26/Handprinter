@@ -1,0 +1,1 @@
+json.partial! "action_ideas/action_idea", action_idea: @action_idea

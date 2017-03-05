@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  resources :model_inactives
+  resources :model_votes
+  resources :model_comments
+  resources :model_inputs
+  resources :inputs
+  resources :sources
+  resources :claims
+  resources :models
+  resources :action_idea_inactives
+  resources :action_ideas
+  resources :action_idea_votes
+  resources :users
+  resources :action_idea_comments
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

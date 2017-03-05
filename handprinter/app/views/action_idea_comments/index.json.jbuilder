@@ -1,0 +1,1 @@
+json.array! @action_idea_comments, partial: 'action_idea_comments/action_idea_comment', as: :action_idea_comment

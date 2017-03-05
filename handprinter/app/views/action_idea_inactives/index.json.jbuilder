@@ -1,0 +1,1 @@
+json.array! @action_idea_inactives, partial: 'action_idea_inactives/action_idea_inactive', as: :action_idea_inactive

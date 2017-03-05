@@ -1,0 +1,1 @@
+json.partial! "model_comments/model_comment", model_comment: @model_comment

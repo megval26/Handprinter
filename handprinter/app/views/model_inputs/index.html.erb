@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Model Inputs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Input</th>
+      <th>Source</th>
+      <th>Units</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @model_inputs.each do |model_input| %>
+      <tr>
+        <td><%= model_input.model_id %></td>
+        <td><%= model_input.input_id %></td>
+        <td><%= model_input.source_id %></td>
+        <td><%= model_input.units %></td>
+        <td><%= link_to 'Show', model_input %></td>
+        <td><%= link_to 'Edit', edit_model_input_path(model_input) %></td>
+        <td><%= link_to 'Destroy', model_input, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Model input', new_model_input_path %>

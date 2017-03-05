@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  action_idea_id: MyString
+  integer: MyString
+  reason: MyString
+  user_id: 1
+  date_created: 2017-03-05
+
+two:
+  action_idea_id: MyString
+  integer: MyString
+  reason: MyString
+  user_id: 1
+  date_created: 2017-03-05

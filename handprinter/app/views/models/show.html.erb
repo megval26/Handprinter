@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @model.user_id %>
+</p>
+
+<p>
+  <strong>Action idea:</strong>
+  <%= @model.action_idea_id %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @model.date_created %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @model.category %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @model.description %>
+</p>
+
+<p>
+  <strong>Anchor:</strong>
+  <%= @model.anchor %>
+</p>
+
+<p>
+  <strong>Equation:</strong>
+  <%= @model.equation %>
+</p>
+
+<p>
+  <strong>Assumptions:</strong>
+  <%= @model.assumptions %>
+</p>
+
+<%= link_to 'Edit', edit_model_path(@model) %> |
+<%= link_to 'Back', models_path %>

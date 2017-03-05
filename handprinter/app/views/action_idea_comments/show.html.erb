@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Action idea:</strong>
+  <%= @action_idea_comment.action_idea_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @action_idea_comment.user_id %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @action_idea_comment.date_created %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @action_idea_comment.text %>
+</p>
+
+<%= link_to 'Edit', edit_action_idea_comment_path(@action_idea_comment) %> |
+<%= link_to 'Back', action_idea_comments_path %>

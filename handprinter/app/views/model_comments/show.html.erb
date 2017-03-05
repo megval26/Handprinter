@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @model_comment.model_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @model_comment.user_id %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @model_comment.date_created %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @model_comment.text %>
+</p>
+
+<%= link_to 'Edit', edit_model_comment_path(@model_comment) %> |
+<%= link_to 'Back', model_comments_path %>
