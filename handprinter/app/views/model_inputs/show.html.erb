@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @model_input.model_id %>
+</p>
+
+<p>
+  <strong>Input:</strong>
+  <%= @model_input.input_id %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @model_input.source_id %>
+</p>
+
+<p>
+  <strong>Units:</strong>
+  <%= @model_input.units %>
+</p>
+
+<%= link_to 'Edit', edit_model_input_path(@model_input) %> |
+<%= link_to 'Back', model_inputs_path %>

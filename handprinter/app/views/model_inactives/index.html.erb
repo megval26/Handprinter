@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Model Inactives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Reason</th>
+      <th>User</th>
+      <th>Date created</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @model_inactives.each do |model_inactive| %>
+      <tr>
+        <td><%= model_inactive.model_id %></td>
+        <td><%= model_inactive.reason %></td>
+        <td><%= model_inactive.user_id %></td>
+        <td><%= model_inactive.date_created %></td>
+        <td><%= link_to 'Show', model_inactive %></td>
+        <td><%= link_to 'Edit', edit_model_inactive_path(model_inactive) %></td>
+        <td><%= link_to 'Destroy', model_inactive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Model inactive', new_model_inactive_path %>

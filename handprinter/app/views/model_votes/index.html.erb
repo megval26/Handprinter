@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Model Votes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @model_votes.each do |model_vote| %>
+      <tr>
+        <td><%= model_vote.model_id %></td>
+        <td><%= model_vote.user_id %></td>
+        <td><%= link_to 'Show', model_vote %></td>
+        <td><%= link_to 'Edit', edit_model_vote_path(model_vote) %></td>
+        <td><%= link_to 'Destroy', model_vote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Model vote', new_model_vote_path %>

@@ -1,0 +1,2 @@
+module ActionIdeaInactivesHelper
+end

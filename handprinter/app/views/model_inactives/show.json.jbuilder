@@ -1,0 +1,1 @@
+json.partial! "model_inactives/model_inactive", model_inactive: @model_inactive

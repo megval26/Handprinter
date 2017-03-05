@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Action Idea Inactives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action idea</th>
+      <th>Integer</th>
+      <th>Reason</th>
+      <th>User</th>
+      <th>Date created</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @action_idea_inactives.each do |action_idea_inactive| %>
+      <tr>
+        <td><%= action_idea_inactive.action_idea_id %></td>
+        <td><%= action_idea_inactive.integer %></td>
+        <td><%= action_idea_inactive.reason %></td>
+        <td><%= action_idea_inactive.user_id %></td>
+        <td><%= action_idea_inactive.date_created %></td>
+        <td><%= link_to 'Show', action_idea_inactive %></td>
+        <td><%= link_to 'Edit', edit_action_idea_inactive_path(action_idea_inactive) %></td>
+        <td><%= link_to 'Destroy', action_idea_inactive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Action idea inactive', new_action_idea_inactive_path %>

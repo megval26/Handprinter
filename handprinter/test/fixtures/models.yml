@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  action_idea_id: 1
+  date_created: 2017-03-05
+  category: 1
+  description: MyString
+  anchor: MyString
+  equation: MyString
+  assumptions: MyString
+
+two:
+  user_id: 1
+  action_idea_id: 1
+  date_created: 2017-03-05
+  category: 1
+  description: MyString
+  anchor: MyString
+  equation: MyString
+  assumptions: MyString

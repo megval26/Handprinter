@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @model_inactive.model_id %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @model_inactive.reason %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @model_inactive.user_id %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @model_inactive.date_created %>
+</p>
+
+<%= link_to 'Edit', edit_model_inactive_path(@model_inactive) %> |
+<%= link_to 'Back', model_inactives_path %>

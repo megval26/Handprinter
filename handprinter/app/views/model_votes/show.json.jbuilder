@@ -1,0 +1,1 @@
+json.partial! "model_votes/model_vote", model_vote: @model_vote

@@ -1,0 +1,1 @@
+json.array! @action_idea_votes, partial: 'action_idea_votes/action_idea_vote', as: :action_idea_vote

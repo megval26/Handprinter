@@ -1,0 +1,1 @@
+json.array! @model_comments, partial: 'model_comments/model_comment', as: :model_comment

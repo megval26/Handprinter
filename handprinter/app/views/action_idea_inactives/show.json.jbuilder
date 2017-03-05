@@ -1,0 +1,1 @@
+json.partial! "action_idea_inactives/action_idea_inactive", action_idea_inactive: @action_idea_inactive

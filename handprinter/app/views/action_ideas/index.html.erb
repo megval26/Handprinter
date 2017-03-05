@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Action Ideas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Creator</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>References</th>
+      <th>Category</th>
+      <th>Date created</th>
+      <th>Active</th>
+      <th>Tags</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @action_ideas.each do |action_idea| %>
+      <tr>
+        <td><%= action_idea.creator %></td>
+        <td><%= action_idea.name %></td>
+        <td><%= action_idea.description %></td>
+        <td><%= action_idea.references %></td>
+        <td><%= action_idea.category %></td>
+        <td><%= action_idea.date_created %></td>
+        <td><%= action_idea.active %></td>
+        <td><%= action_idea.tags %></td>
+        <td><%= link_to 'Show', action_idea %></td>
+        <td><%= link_to 'Edit', edit_action_idea_path(action_idea) %></td>
+        <td><%= link_to 'Destroy', action_idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Action idea', new_action_idea_path %>

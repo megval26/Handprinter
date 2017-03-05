@@ -1,0 +1,1 @@
+json.array! @model_inactives, partial: 'model_inactives/model_inactive', as: :model_inactive

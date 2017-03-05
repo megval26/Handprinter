@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Creator:</strong>
+  <%= @action_idea.creator %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @action_idea.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @action_idea.description %>
+</p>
+
+<p>
+  <strong>References:</strong>
+  <%= @action_idea.references %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @action_idea.category %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @action_idea.date_created %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @action_idea.active %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @action_idea.tags %>
+</p>
+
+<%= link_to 'Edit', edit_action_idea_path(@action_idea) %> |
+<%= link_to 'Back', action_ideas_path %>

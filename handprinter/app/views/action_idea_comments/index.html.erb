@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Action Idea Comments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action idea</th>
+      <th>User</th>
+      <th>Date created</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @action_idea_comments.each do |action_idea_comment| %>
+      <tr>
+        <td><%= action_idea_comment.action_idea_id %></td>
+        <td><%= action_idea_comment.user_id %></td>
+        <td><%= action_idea_comment.date_created %></td>
+        <td><%= action_idea_comment.text %></td>
+        <td><%= link_to 'Show', action_idea_comment %></td>
+        <td><%= link_to 'Edit', edit_action_idea_comment_path(action_idea_comment) %></td>
+        <td><%= link_to 'Destroy', action_idea_comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Action idea comment', new_action_idea_comment_path %>
