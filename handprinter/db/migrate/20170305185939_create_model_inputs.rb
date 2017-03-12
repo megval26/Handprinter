@@ -5,6 +5,8 @@ class CreateModelInputs < ActiveRecord::Migration
       t.integer :input_id
       t.integer :source_id
       t.string :units
+      t.float :quantity
+      t.string :actType
 
       t.timestamps null: false
     end

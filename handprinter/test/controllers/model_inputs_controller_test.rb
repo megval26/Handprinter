@@ -18,7 +18,7 @@ class ModelInputsControllerTest < ActionController::TestCase
 
   test "should create model_input" do
     assert_difference('ModelInput.count') do
-      post :create, model_input: { input_id: @model_input.input_id, model_id: @model_input.model_id, source_id: @model_input.source_id, units: @model_input.units }
+      post :create, model_input: { actType: @model_input.actType, input_id: @model_input.input_id, model_id: @model_input.model_id, quantity: @model_input.quantity, source_id: @model_input.source_id, units: @model_input.units }
     end
 
     assert_redirected_to model_input_path(assigns(:model_input))
@@ -35,7 +35,7 @@ class ModelInputsControllerTest < ActionController::TestCase
   end
 
   test "should update model_input" do
-    patch :update, id: @model_input, model_input: { input_id: @model_input.input_id, model_id: @model_input.model_id, source_id: @model_input.source_id, units: @model_input.units }
+    patch :update, id: @model_input, model_input: { actType: @model_input.actType, input_id: @model_input.input_id, model_id: @model_input.model_id, quantity: @model_input.quantity, source_id: @model_input.source_id, units: @model_input.units }
     assert_redirected_to model_input_path(assigns(:model_input))
   end
 
