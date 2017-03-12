@@ -69,6 +69,6 @@ class ActionIdeasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def action_idea_params
-      params.require(:action_idea).permit(:creator, :name, :description, :references, :category, :date_created, :active, :tags)
+      params.require(:action_idea).permit(:user_id, :name, :description, :references, :category, :date_created, :active, :tags)
     end
 end

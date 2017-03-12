@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20170305185954) do
   end
 
   create_table "action_ideas", force: :cascade do |t|
-    t.integer  "creator"
+    t.integer  "user_id"
     t.string   "name"
     t.string   "description"
     t.string   "references"
