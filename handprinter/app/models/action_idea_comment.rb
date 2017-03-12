@@ -13,6 +13,8 @@ class ActionIdeaComment < ActiveRecord::Base
 
   # Misc Methods
   #-------------------------------
+
+  #counts the number of comments for a given action idea
   def numComments(actionIdeaID) 
   	return ActionIdeaComment.where(actionIdeaID =self.action_idea_id).count()
   end

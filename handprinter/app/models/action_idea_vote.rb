@@ -13,6 +13,9 @@ class ActionIdeaVote < ActiveRecord::Base
 
   # Misc Methods
   #-------------------------------
+
+  #counts the number of votes for a given action idea *** NOTE*** This is a duplciate method
+  # of what is shown in the ActionIdea model. Just putting in here for thoroughness sake. 
   def numVotes(actionIdeaID)
   	return ActionIdeaVote.where(actionIdeaID = self.action_idea_id).count()
   end
