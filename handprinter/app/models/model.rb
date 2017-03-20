@@ -18,13 +18,27 @@ class Model < ActiveRecord::Base
 
 
   #scopes
-	# By votes
-	# By user
-	# By action_idea
-	# By date_created
-	# Alphabetical
-	# By category
+	
+  # Alphabetical
+  scope :alphabetical, -> { order('action_idea') }
 
+  # by user
+  scope :by_user, ->(user_id) { where("user_id = ?", user_id)}
+
+  # by category
+  scope :by_category, ->(category_id) { where("category_id = ?", category_id)}
+
+  # chronological
+  scope :chronological, -> { order(:date_created) }
+
+
+  #methods
+
+  #by_votes
+  #This needs testing/debugging
+  def by_votes
+    #SQL code -> aggregates model votes by model_id and then sorts in descending order
+  end
 
 
 end
