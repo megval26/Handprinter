@@ -1,7 +1,7 @@
 class Input < ActiveRecord::Base
 
-	has_many :model_input
-	has_many :source, through: :model_input
+	has_many :model_inputs
+	has_many :sources, through: :model_inputs
 
 	validates_presence_of :name, :category
 

@@ -1,6 +1,6 @@
 class Claim < ActiveRecord::Base
 
-	has_many :source
+	has_many :sources
 	belongs_to :model
 
 	
