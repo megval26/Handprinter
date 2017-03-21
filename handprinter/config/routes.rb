@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :model_inputs
   resources :model_inactives
   resources :model_votes
   resources :model_comments

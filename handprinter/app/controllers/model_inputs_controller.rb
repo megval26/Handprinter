@@ -69,6 +69,6 @@ class ModelInputsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def model_input_params
-      params.require(:model_input).permit(:model_id, :input_id, :source_id, :units)
+      params.require(:model_input).permit(:model_id, :input_id, :source_id, :units, :quantity, :actType)
     end
 end

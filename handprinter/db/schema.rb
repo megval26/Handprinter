@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20170305185954) do
   end
 
   create_table "action_ideas", force: :cascade do |t|
-    t.integer  "creator"
+    t.integer  "user_id"
     t.string   "name"
     t.string   "description"
     t.string   "references"
@@ -90,6 +90,8 @@ ActiveRecord::Schema.define(version: 20170305185954) do
     t.integer  "input_id"
     t.integer  "source_id"
     t.string   "units"
+    t.float    "quantity"
+    t.string   "actType"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

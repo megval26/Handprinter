@@ -5,9 +5,13 @@ one:
   input_id: 1
   source_id: 1
   units: MyString
+  quantity: 1.5
+  actType: MyString
 
 two:
   model_id: 1
   input_id: 1
   source_id: 1
   units: MyString
+  quantity: 1.5
+  actType: MyString

@@ -1,7 +1,7 @@
 class CreateActionIdeas < ActiveRecord::Migration
   def change
     create_table :action_ideas do |t|
-      t.integer :creator
+      t.integer :user_id
       t.string :name
       t.string :description
       t.string :references
