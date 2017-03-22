@@ -1390,6 +1390,7 @@ Migrating to CreateModelInactives (20170305185954)
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-03-21 17:25:52 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -1408,6 +1409,16 @@ Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 0.0ms)
 
 Started GET "/favicon.ico" for ::1 at 2017-03-21 17:53:08 -0400
 >>>>>>> 050901331cbb52e92562bc27912cb06e9d45eafc
+=======
+Started GET "/" for ::1 at 2017-03-21 17:58:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-03-21 17:58:05 -0400
+>>>>>>> 0ad9350119f8c7ce9cb4ae967885296d7146eb39
 
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -1433,6 +1444,7 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   rack (1.6.5) lib/rack/lock.rb:17:in `call'
   rack (1.6.5) lib/rack/content_length.rb:15:in `call'
   rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
 <<<<<<< HEAD
   /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
@@ -1897,3 +1909,437 @@ Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54b
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-03-21 17:59:42 -0400
 >>>>>>> 050901331cbb52e92562bc27912cb06e9d45eafc
+=======
+  /Users/serenegao/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/serenegao/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/serenegao/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.9ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.5ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 17:58:12 -0400
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.2ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 651ms (Views: 642.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/action_idea_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_idea_inactives.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/claims.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_idea_votes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_ideas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/inputs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_inactives.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_inputs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_votes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/models.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/scaffolds.self-e9f074ec35dc928504fca9695f3cb37dfdbeddbedb6438830cceb47183fa4130.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/sources.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_idea_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_idea_inactives.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_idea_votes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/action_ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/claims.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/inputs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_inactives.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_inputs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/model_votes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/models.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/sources.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-03-21 17:58:13 -0400
+
+
+Started GET "/models/new" for ::1 at 2017-03-21 17:58:15 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (11.6ms)
+  Rendered models/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 73ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:01:27 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 18:01:32 -0400
+Processing by ModelsController#index as HTML
+  [1m[36mModel Load (0.1ms)[0m  [1mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 18:02:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.2ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 261ms (Views: 242.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 18:02:38 -0400
+Processing by ModelsController#index as HTML
+  [1m[36mModel Load (0.1ms)[0m  [1mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 18:02:41 -0400
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.1ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 18:03:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.2ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 249ms (Views: 231.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-21 18:03:35 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models" for ::1 at 2017-03-21 18:03:39 -0400
+Processing by ModelsController#index as HTML
+  [1m[36mModel Load (0.1ms)[0m  [1mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/models" for ::1 at 2017-03-22 00:23:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.5ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 339ms (Views: 318.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:23:34 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (1.3ms)
+  Rendered models/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/serenegao/Handprinter/handprinter/app/views/models/_form.html.erb:118: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/models/_form.html.erb:118: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb___1454639518941918489_70138284257680'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.1ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 00:25:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 20ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models" for ::1 at 2017-03-22 00:25:26 -0400
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.1ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 229ms (Views: 220.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:25:28 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (1.8ms)
+  Rendered models/new.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/serenegao/Handprinter/handprinter/app/views/models/_form.html.erb:121: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/models/_form.html.erb:121: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb___3658671787473833207_70243349281600'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.7ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-22 00:28:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models" for ::1 at 2017-03-22 00:28:07 -0400
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.1ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 225ms (Views: 216.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:28:10 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (1.9ms)
+  Rendered models/new.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/serenegao/Handprinter/handprinter/app/views/models/_form.html.erb:109: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze; end 
+             ^):
+  app/views/models/_form.html.erb:109: syntax error, unexpected keyword_end, expecting end-of-input
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb__1918838461043551613_70273336457900'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.6ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.8ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:28:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (1.4ms)
+  Rendered models/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/serenegao/Handprinter/handprinter/app/views/models/_form.html.erb:121: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/models/_form.html.erb:121: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb__716562769254138201_70120434595520'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.8ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.5ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.4ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:30:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (1.5ms)
+  Rendered models/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 5.0ms)
+
+SyntaxError (/Users/serenegao/Handprinter/handprinter/app/views/models/_form.html.erb:121: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/models/_form.html.erb:121: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb__2687986754395727554_70324054660300'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.0ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:31:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (22.9ms)
+  Rendered models/new.html.erb within layouts/application (27.1ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f95066b7108>:0x007f95066ade78>):
+    13: <!--
+    14: 
+    15:   <div class="field">
+    16:     <%= f.label :user_id %><br>
+    17:     <%= f.number_field :user_id %>
+    18:   </div>
+    19:   <div class="field">
+  app/views/models/_form.html.erb:16:in `_app_views_models__form_html_erb___398292272154717504_70139017035720'
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb__1333365838262758924_70139017147840'
+
+
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.8ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.5ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:33:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (2.0ms)
+  Rendered models/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 251ms (Views: 224.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:37:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.3ms)
+  Rendered models/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 381ms (Views: 352.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/models.self-2d8c149f063f30c1e6feafce4d949926106224def18f512109e39b3dccb8f2be.css?body=1" for ::1 at 2017-03-22 00:37:33 -0400
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:50:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (2.1ms)
+  Rendered models/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 251ms (Views: 224.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 00:59:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.4ms)
+  Rendered models/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 348ms (Views: 319.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/models.self-b866bcf82d7f0a6608144ee05ed605d91f0d56d6c14c953f2abd6c73a8a9bc24.css?body=1" for ::1 at 2017-03-22 00:59:06 -0400
+>>>>>>> 0ad9350119f8c7ce9cb4ae967885296d7146eb39
