@@ -1854,3 +1854,22 @@ Completed 200 OK in 348ms (Views: 319.3ms | ActiveRecord: 5.7ms)
 
 
 Started GET "/assets/models.self-b866bcf82d7f0a6608144ee05ed605d91f0d56d6c14c953f2abd6c73a8a9bc24.css?body=1" for ::1 at 2017-03-22 00:59:06 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/serenegao/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
+Started GET "/models" for ::1 at 2017-03-22 14:01:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#index as HTML
+  Rendering models/index.html.erb within layouts/application
+  [1m[36mModel Load (0.1ms)[0m  [1m[34mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 625ms (Views: 605.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/models.self-b866bcf82d7f0a6608144ee05ed605d91f0d56d6c14c953f2abd6c73a8a9bc24.css?body=1" for ::1 at 2017-03-22 14:01:56 -0400
+Started GET "/models/new" for ::1 at 2017-03-22 14:01:57 -0400
+Processing by ModelsController#new as HTML
+  Rendering models/new.html.erb within layouts/application
+  Rendered models/_form.html.erb (0.9ms)
+  Rendered models/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 48.1ms | ActiveRecord: 0.6ms)
+
+
