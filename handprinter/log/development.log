@@ -1389,6 +1389,16 @@ Migrating to CreateModelInactives (20170305185954)
 >>>>>>> 8327445332865c1d0eab5b05109b2bcdef36ee45
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2017-03-21 17:25:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 17ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-03-21 17:25:53 -0400
+=======
 Started GET "/" for ::1 at 2017-03-21 17:53:07 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -1397,6 +1407,7 @@ Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/favicon.ico" for ::1 at 2017-03-21 17:53:08 -0400
+>>>>>>> 050901331cbb52e92562bc27912cb06e9d45eafc
 
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -1422,6 +1433,270 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   rack (1.6.5) lib/rack/lock.rb:17:in `call'
   rack (1.6.5) lib/rack/content_length.rb:15:in `call'
   rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
+  /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.5ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.5ms)
+
+
+Started GET "/models" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+Processing by ModelsController#index as HTML
+  [1m[35mModel Load (0.2ms)[0m  SELECT "models".* FROM "models"
+  Rendered models/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 394ms (Views: 383.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/action_idea_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_ideas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/inputs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/claims.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_idea_inactives.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_idea_votes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_inactives.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_inputs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/models.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/scaffolds.self-553ec2610f50c97452cd266c030055dc43a5632ce97954fc47c976e27af069ad.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/sources.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_votes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_idea_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_idea_inactives.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_idea_votes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/action_ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/claims.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/inputs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_inactives.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_inputs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/model_votes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/models.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/sources.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-03-21 17:25:57 -0400
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 17:26:01 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (10.8ms)
+  Rendered models/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 69ms (Views: 52.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:26:54 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.9ms)
+  Rendered models/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Head):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :action_idea_id %><br>
+    16:     <%= Replacing a Shower Head%>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :date_created %><br>
+  app/views/models/_form.html.erb:16:in `block in _app_views_models__form_html_erb___242561496218923549_70122760356960'
+  app/views/models/_form.html.erb:1:in `_app_views_models__form_html_erb___242561496218923549_70122760356960'
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb___2635241698035154875_70122757854440'
+
+
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.1ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:27:16 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (8.2ms)
+  Rendered models/new.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::City):
+    22:   <div class="field">
+    23:     <%= f.label :category %><br>
+    24:     <%= f.number_field :category %>
+    25:     <%= f.collection_select(:city_id, City.all, :id, :name) %> 
+    26:  </div>
+    27:   <div class="field">
+    28:     <%= f.label :description %><br>
+  app/views/models/_form.html.erb:25:in `block in _app_views_models__form_html_erb___242561496218923549_70122977914140'
+  app/views/models/_form.html.erb:1:in `_app_views_models__form_html_erb___242561496218923549_70122977914140'
+  app/views/models/new.html.erb:3:in `_app_views_models_new_html_erb___2635241698035154875_70122757854440'
+
+
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.2ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:27:28 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.9ms)
+  Rendered models/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:27:57 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (4.6ms)
+  Rendered models/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 60ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:28:23 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (2.5ms)
+  Rendered models/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:29:31 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.3ms)
+  Rendered models/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models" for 127.0.0.1 at 2017-03-21 18:33:49 -0400
+Processing by ModelsController#index as HTML
+  [1m[36mModel Load (0.3ms)[0m  [1mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:40:06 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.6ms)
+  Rendered models/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:40:16 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (3.2ms)
+  Rendered models/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/models/new" for 127.0.0.1 at 2017-03-21 18:40:55 -0400
+Processing by ModelsController#new as HTML
+  Rendered models/_form.html.erb (9.1ms)
+  Rendered models/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+=======
   /Users/meghanavalluri/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /Users/meghanavalluri/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /Users/meghanavalluri/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -1621,3 +1896,4 @@ Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54b
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-03-21 17:59:42 -0400
+>>>>>>> 050901331cbb52e92562bc27912cb06e9d45eafc

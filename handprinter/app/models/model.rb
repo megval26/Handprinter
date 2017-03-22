@@ -31,6 +31,8 @@ class Model < ActiveRecord::Base
   # chronological
   scope :chronological, -> { order(:date_created) }
 
+  # by votes
+  #scope :votes, -> { order(:)}
 
   #methods
 

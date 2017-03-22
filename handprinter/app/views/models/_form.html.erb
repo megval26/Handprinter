@@ -12,24 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
     <%= f.label :action_idea_id %><br>
-    <%= f.number_field :action_idea_id %>
+      <h2> Replacing a Shower Head <h2>
   </div>
-  <div class="field">
-    <%= f.label :date_created %><br>
-    <%= f.date_select :date_created %>
+  <!-- <div class="field">
+    <%#= f.label :date_created %><br>
+    <%#= f.date_select :date_created %>
   </div>
+   -->
   <div class="field">
     <%= f.label :category %><br>
-    <%= f.number_field :category %>
-  </div>
+    <%= f.select :category, ["Act", "Behavioral Change", "Choice"]%> 
+ </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :anchor %><br>
