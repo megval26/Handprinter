@@ -5440,3 +5440,4 @@ Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
 
 
 >>>>>>> 30912a3f39a337cd4350082d778ef1c973767be2
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /home/alex/Dropbox/junior classes/67-373/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
