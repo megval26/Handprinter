@@ -1391,6 +1391,18 @@ Migrating to CreateModelInactives (20170305185954)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+Started GET "/" for ::1 at 2017-03-21 17:58:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/serenegao/.rvm/gems/ruby-2.2.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-03-21 17:58:05 -0400
+=======
+>>>>>>> 30912a3f39a337cd4350082d778ef1c973767be2
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2017-03-21 17:25:52 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -1409,6 +1421,7 @@ Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 0.0ms)
 
 Started GET "/favicon.ico" for ::1 at 2017-03-21 17:53:08 -0400
 >>>>>>> 050901331cbb52e92562bc27912cb06e9d45eafc
+<<<<<<< HEAD
 =======
 Started GET "/" for ::1 at 2017-03-21 17:58:05 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
@@ -1419,6 +1432,9 @@ Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.0ms)
 
 Started GET "/favicon.ico" for ::1 at 2017-03-21 17:58:05 -0400
 >>>>>>> 0ad9350119f8c7ce9cb4ae967885296d7146eb39
+=======
+>>>>>>> 2511b3033550f35b26fa797d3a7381c80d5045b5
+>>>>>>> 30912a3f39a337cd4350082d778ef1c973767be2
 
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -1446,9 +1462,15 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+=======
+  /Users/serenegao/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/serenegao/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/serenegao/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+>>>>>>> 30912a3f39a337cd4350082d778ef1c973767be2
 
 
   Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
@@ -1795,6 +1817,34 @@ Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6
 
 Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-21 17:53:15 -0400
 
+<<<<<<< HEAD
+=======
+Started GET "/assets/models.self-b866bcf82d7f0a6608144ee05ed605d91f0d56d6c14c953f2abd6c73a8a9bc24.css?body=1" for ::1 at 2017-03-22 00:59:06 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/serenegao/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
+Started GET "/models" for ::1 at 2017-03-22 14:01:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#index as HTML
+  Rendering models/index.html.erb within layouts/application
+  [1m[36mModel Load (0.1ms)[0m  [1m[34mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 625ms (Views: 605.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/models.self-b866bcf82d7f0a6608144ee05ed605d91f0d56d6c14c953f2abd6c73a8a9bc24.css?body=1" for ::1 at 2017-03-22 14:01:56 -0400
+Started GET "/models/new" for ::1 at 2017-03-22 14:01:57 -0400
+Processing by ModelsController#new as HTML
+  Rendering models/new.html.erb within layouts/application
+  Rendered models/_form.html.erb (0.9ms)
+  Rendered models/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 48.1ms | ActiveRecord: 0.6ms)
+
+
+=======
+<<<<<<< HEAD
+  /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/alex/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+>>>>>>> 30912a3f39a337cd4350082d778ef1c973767be2
 
 Started GET "/assets/action_idea_comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-21 17:53:15 -0400
 
@@ -4203,6 +4253,7 @@ Completed 200 OK in 1704ms (Views: 1702.1ms | ActiveRecord: 0.0ms)
 
 Started GET "/stylesheets/all.css" for 127.0.0.1 at 2017-03-23 11:46:23 -0400
 
+<<<<<<< HEAD
 ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
@@ -4457,3 +4508,69 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/all.css"):
   Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.4ms)
+=======
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-03-21 17:59:42 -0400
+>>>>>>> 050901331cbb52e92562bc27912cb06e9d45eafc
+>>>>>>> 2511b3033550f35b26fa797d3a7381c80d5045b5
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/serenegao/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
+Started GET "/models" for ::1 at 2017-03-22 21:49:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#index as HTML
+  Rendering models/index.html.erb within layouts/application
+  [1m[36mModel Load (0.6ms)[0m  [1m[34mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 9562ms (Views: 9535.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-262fa723bbafcf7e249e6fdfaeccaadf9f24b9c83e8c1339213faf7d286fe3d9.css?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2017-03-22 21:49:30 -0400
+Started GET "/models/new" for ::1 at 2017-03-22 21:49:32 -0400
+Processing by ModelsController#new as HTML
+  Rendering models/new.html.erb within layouts/application
+  Rendered models/_form.html.erb (0.7ms)
+  Rendered models/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 63ms (Views: 51.3ms | ActiveRecord: 0.9ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/serenegao/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/serenegao/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/serenegao/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
+Started GET "/models/new" for ::1 at 2017-03-22 21:50:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ModelsController#new as HTML
+  Rendering models/new.html.erb within layouts/application
+  Rendered models/_form.html.erb (0.7ms)
+  Rendered models/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 328ms (Views: 294.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/models" for ::1 at 2017-03-22 21:50:20 -0400
+Processing by ModelsController#index as HTML
+  Rendering models/index.html.erb within layouts/application
+  [1m[36mModel Load (0.1ms)[0m  [1m[34mSELECT "models".* FROM "models"[0m
+  Rendered models/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/models/new" for ::1 at 2017-03-22 21:50:22 -0400
+Processing by ModelsController#new as HTML
+  Rendering models/new.html.erb within layouts/application
+  Rendered models/_form.html.erb (0.7ms)
+  Rendered models/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+>>>>>>> 30912a3f39a337cd4350082d778ef1c973767be2
