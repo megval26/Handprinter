@@ -26,8 +26,5 @@
 /public/.DS_Store
 
 # Ignore the coverage directory
-<<<<<<< HEAD
 /coverage
-=======
-/coverage
->>>>>>> 466a901297a40142e2c4bc20c951b0140fc98945
+
