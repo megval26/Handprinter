@@ -2,10 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-
-#action-ideas-index table {
+.table {
 color: #333;
 font-family: Helvetica, Arial, sans-serif;
 width: 640px;
@@ -13,18 +10,18 @@ border-collapse:
 collapse; border-spacing: 0;
 }
 
-#action-ideas-index td, th {
+table-striped td, th {
 border: 1px solid transparent; /* No more visible border */
 height: 30px;
 transition: all 0.3s; /* Simple transition for hover effect */
 }
 
-#action-ideas-index th {
+.action-ideas-index th {
 background: #DFDFDF; /* Darken header a bit */
 font-weight: bold;
 }
 
-#action-ideas-index td {
+.action-ideas-index td {
 background: #FAFAFA;
 text-align: center;
 }
@@ -38,6 +35,9 @@ tr:nth-child(odd) td { background: #FEFEFE; }
 #action-ideas-index tr td:hover { background: #666; color: #FFF; } /* Hover cell effect! */
 
 
+#test th{
+	color: #87BD24
+}
 
 #action-ideas-index {
     padding-top: 50px
