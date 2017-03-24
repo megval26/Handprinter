@@ -1,6 +1,4 @@
 <section id="model-form">
-
-
   <%= form_for(@model) do |f| %>
   <% if @model.errors.any? %>
   <div id="error_explanation">
@@ -12,53 +10,72 @@
     </ul>
   </div>
   <% end %>
-
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="form-wrap">
-
-          <div class="form-group field">
-            <%#= f.label :action_idea_id %><br>
-            <h1> Replacing a Shower Head <h1>
-            </div>
-
-            <div class="form-group field ">
-              <%= f.label :category %><br>
-              <%= f.select :category, ["Act", "Behavioral Change", "Choice"]%> 
-            </div>
-            <div class="form-group field ">
-              <%= f.label :description %><br>
-              <%= f.text_area :description %>
-            </div>
-            <div class="form-group field">
-              <%= f.label :anchor %><br>
-              <%= f.text_field :anchor %>
-            </div>
-            <div class="form-group field">
-              <%= f.label :equation %><br>
-              <%= f.text_field :equation %>
-            </div>
-            <div class="form-group field">
-              <%= f.label :assumptions %><br>
-              <%= f.text_field :assumptions %>
-            </div>
-            <div class="btn btn-custom btn-lg btn-block actions">
-              <%= f.submit %>
-            </div>
-
-
+<section id="model-form">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-xs-8">
+        <div class = "form-wrap">
+          <div class="field form-group">
+            <h1> Switching to a Low-Flow Shower Head <h1>
           </div>
-        </div> <!-- /.col-xs-12 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
+         <!-- <div class="field">
+            <%#= f.label :date_created %><br>
+            <%#= f.date_select :date_created %>
+          </div> -->
+          <div class="field form-group">
+            <%= f.label :category %><br>
+            <%= f.select :category, ["Act", "Behavioral Change", "Choice"], class: "form-control" %>
+         </div>
+          <div class="field form-group">
+            <%= f.label :description %><br>
+            <%= f.text_area :description, class: "form-control"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label :anchor %><br>
+            <%= f.text_field :anchor, class: "form-control"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label :equation %><br>
+           <%= f.text_field :equation, class: "form-control"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label :assumptions %><br>
+            <%= f.text_area :assumptions, class: "form-control"%>
+          </div>
+          <div class="actions">
+            <%= f.submit "Create Model", class: "btn btn-custom btn-lg btn-block" %>
+          </div>
+        </div>
+      </div>
 
-
-
-  </section>
-
-  <% end %>
-
-
+      <div class = "col-xs-4">
+        <div class = "form-wrap">
+          <div class="field form-group">
+            <h1> Example <h1>
+          </div>
+          <div class="field form-group ">
+            <%= f.label :category %><br>
+            <%= f.select :category, ["Act", "Behavioral Change", "Choice"], class: "form-control"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label :description %><br>
+            <%= f.text_area :description,class: "form-control", placeholder: 'Getting a low-flow showerhead to reduce water consumption and energy to heat up water.' %>
+          </div>
+          <div class="field form-group">
+            <%= f.label :anchor %><br>
+            <%= f.text_field :anchor, class: "form-control", placeholder: 'Body Cleaning'%>
+          </div>
+          <div class="field form-group">
+            <%= f.label :equation %><br>
+            <%= f.text_field :equation, class: "form-control", placeholder: 'HP = (2.5 * 2)*LCIA of 1 gallon of water'%>
+          </div>
+          <div class="field form-group">
+            <%= f.label :assumptions %><br>
+            <%= f.text_area :assumptions, class: "form-control", placeholder: 'No user behavior changes based on lower water flow'%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>

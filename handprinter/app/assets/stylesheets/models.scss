@@ -7,16 +7,24 @@
     padding-top: 50px
 }
 #model-form .form-wrap {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
+#model-form .col-xs-8 {
+    border-right: 1px solid #ccc;
+}
+#model-form .col-xs-4 {
+    padding-left: 5%;
+}
+
 #model-form h1 {
-    color: #1fa67b;
+    color: #87BD24;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     padding-bottom: 20px;
 }
+
 #model-form .form-group {
     margin: 25px 25px 15px 15px;
 }
@@ -31,7 +39,7 @@
 }
 #model-form .checkbox.show:before {
     content: '\e013';
-    color: #1fa67b;
+    color: #87BD24;
     font-size: 17px;
     margin: 1px 0 0 3px;
     position: absolute;
@@ -67,11 +75,15 @@
 	-------------------------------------------------- */
 .form-control {
     color: #212121;
+    width: 100%;
 }
+
 .btn-custom {
     color: #fff;
-	background-color: #1fa67b;
+	background-color: #87BD24;
+    width: 100%;
 }
+
 .btn-custom:hover,
 .btn-custom:focus {
     color: #fff;

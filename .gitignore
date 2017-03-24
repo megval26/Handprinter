@@ -1,2 +1,6 @@
 
 *.cache
+
+handprinter/log/development\.log
+
+handprinter/tmp/cache/assets/sprockets/v3\.0/Cx \(Case Conflict\)/cXRYlwJet5cMSTjCRD7eW7RSFcVK11DEzM3j28SSBZE\.cache~HEAD
