@@ -4681,3 +4681,4 @@ DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please ch
   Rendering /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
   Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /home/alex/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.2ms)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /home/alex/Dropbox/junior classes/67-373/Handprinter/handprinter/config/initializers/validates_timeliness.rb:1)
