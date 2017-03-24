@@ -34,6 +34,26 @@
             <%= f.label :anchor %><br>
             <%= f.text_field :anchor, class: "form-control"%>
           </div>
+
+<!-- Claim, Source and Inputs THIS PART DOESN"T WORK RIGHT YET-->
+          <div class="field form-group">
+            <%= f.label "Claim" %><br>
+            <%= f.text_field :anchor, class: "form-control"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label "Source" %><br>
+            <%= f.text_field :anchor, class: "form-control"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label "Inputs" %><br>
+            <div class = "form-inline">
+              <%= f.text_field :anchor, class: "form-control", placeholder: "Amount"%>
+              <%= f.text_field :anchor, class: "form-control", placeholder: "Units"%>
+              <%= f.text_field :anchor, class: "form-control", placeholder: "Object Type"%>
+              <%= f.select :anchor,["Pre-Act", "Post-Act"], class: "form-control"%>
+            </div>
+          </div>
+<!-- Properly Working Part -->
           <div class="field form-group">
             <%= f.label :equation %><br>
            <%= f.text_field :equation, class: "form-control"%>
@@ -65,6 +85,25 @@
             <%= f.label :anchor %><br>
             <%= f.text_field :anchor, class: "form-control", placeholder: 'Body Cleaning'%>
           </div>
+<!-- Claim, Source and Inputs THIS PART DOESN"T WORK RIGHT YET-->
+          <div class="field form-group">
+            <%= f.label "Claim" %><br>
+            <%= f.text_field :anchor, class: "form-control", placeholder: "X brand showerhead uses less water than regular shower head"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label "Source" %><br>
+            <%= f.text_field :anchor, class: "form-control", placeholder: "www.hometips.com/showerheadguide"%>
+          </div>
+          <div class="field form-group">
+            <%= f.label "Inputs" %><br>
+            <div class = "form-inline">
+              <%= f.text_field :anchor, class: "form-control", placeholder: "2.5"%>
+              <%= f.text_field :anchor, class: "form-control", placeholder: "Gallons"%>
+              <%= f.text_field :anchor, class: "form-control", placeholder: "water"%>
+              <%= f.select :anchor,["Pre-Act", "Post-Act"], class: "form-control"%>
+            </div>
+          </div>
+<!-- Properly Working Part -->
           <div class="field form-group">
             <%= f.label :equation %><br>
             <%= f.text_field :equation, class: "form-control", placeholder: 'HP = (2.5 * 2)*LCIA of 1 gallon of water'%>
