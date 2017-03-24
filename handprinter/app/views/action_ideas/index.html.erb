@@ -19,14 +19,12 @@
 
   <tbody>
     <% @action_ideas.each do |action_idea| %>
-      <tr>
-        <td><%= action_idea.creator %></td>
-        <td><%= action_idea.name %></td>
-        <td><%= action_idea.description %></td>
-        <td><%= action_idea.references %></td>
+      <tr class="action-ideas-index">
+        <td class="action-ideas-index"><%= action_idea.name%></td>
+        <td class="action-ideas-index"><%= action_idea.description%></td>
+        <td class="action-ideas-index"><%= action_idea.references %></td>
         <td><%= action_idea.category %></td>
         <td><%= action_idea.date_created %></td>
-        <td><%= action_idea.active %></td>
         <td><%= action_idea.tags %></td>
         <td><%= link_to 'Show', action_idea %></td>
         <td><%= link_to 'Edit', edit_action_idea_path(action_idea) %></td>

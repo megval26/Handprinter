@@ -1,3 +1,102 @@
 // Place all the styles related to the ActionIdeas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+#action-ideas-index table {
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+width: 640px;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+#action-ideas-index td, th {
+border: 1px solid transparent; /* No more visible border */
+height: 30px;
+transition: all 0.3s; /* Simple transition for hover effect */
+}
+
+#action-ideas-index th {
+background: #DFDFDF; /* Darken header a bit */
+font-weight: bold;
+}
+
+#action-ideas-index td {
+background: #FAFAFA;
+text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */
+tr:nth-child(even) td { background: #F1F1F1; }
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells) */
+tr:nth-child(odd) td { background: #FEFEFE; }
+
+#action-ideas-index tr td:hover { background: #666; color: #FFF; } /* Hover cell effect! */
+
+
+
+#action-ideas-index {
+    padding-top: 50px
+}
+#action-ideas-index .form-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+#action-ideas-index .col-xs-8 {
+    border-right: 1px solid #ccc;
+}
+#action-ideas-index .col-xs-4 {
+    padding-left: 5%;
+}
+
+#action-ideas-index h1 {
+    color: #87BD24;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+#action-ideas-index .btn.btn-custom {
+    font-size: 14px;
+	margin-bottom: 20px;
+
+
+/*    --------------------------------------------------
+	:: Inputs & Buttons
+	-------------------------------------------------- */
+.form-control {
+    color: #212121;
+    width: 100%;
+}
+
+.btn-custom {
+    color: #fff;
+	background-color: #87BD24;
+    width: 100%;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    color: #fff;
+}
+
+/*    --------------------------------------------------
+    :: Footer
+	-------------------------------------------------- */
+#footer {
+    color: #6d6d6d;
+    font-size: 12px;
+    text-align: center;
+}
+#footer p {
+    margin-bottom: 0;
+}
+#footer a {
+    color: inherit;
+}
