@@ -10,6 +10,9 @@ def index
 
   def privacy
   end
+
+  def terms
+  end
   
   def search
     @query = params[:query]
