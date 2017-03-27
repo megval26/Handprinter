@@ -5,7 +5,7 @@ class Input < ActiveRecord::Base
 
 	validates_presence_of :name, :category
 
-	default_scope :ordered_by_category, -> { order('category') }
+	#default_scope :ordered_by_category, -> { order('category') }
 
 	# http://stackoverflow.com/questions/22175571/rails-group-articles-by-category
 
